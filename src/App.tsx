@@ -42,7 +42,7 @@ export default function App() {
   };
 
   return (
-    <main style={{ backgroundImage: "url('src/assets/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "black" }}>
+    <main style={{ backgroundImage: "url('./src/assets/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "black" }}>
       <div className="h-screen flex flex-col items-center justify-center">
         <h1 className="text-slate-100 font-bold font-inter text-6xl tracking-wide drop-shadow-md">ClimaTempo</h1>
 
