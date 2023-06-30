@@ -1,10 +1,10 @@
 # ClimaTempo
 
 <p>
-<img src=".github/Home1.png" alt="Demonstração do projeto" width="100%" />
+<img src="src/.github/Home1.png" alt="Demonstração do projeto" width="100%" />
 </p>
 <p>
-<img src=".github/Home2.png" alt="Demonstração do projeto" width="100%" />
+<img src="src/.github/Home2.png" alt="Demonstração do projeto" width="100%" />
 </p>
 <p>
 
