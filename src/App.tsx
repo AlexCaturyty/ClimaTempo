@@ -42,7 +42,7 @@ export default function App() {
   };
 
   return (
-    <main style={{ backgroundImage: "url('./src/assets/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "black" }}>
+    <main style={{ backgroundImage: "url('src/assets/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "black" }}>
       <div className="h-screen flex flex-col items-center justify-center">
         <h1 className="text-slate-100 font-bold font-inter text-6xl tracking-wide drop-shadow-md">ClimaTempo</h1>
 
@@ -51,7 +51,7 @@ export default function App() {
             <input className="rounded-md w-80 h-9 pl-2 pr-2 mt-2 focus:outline-none" placeholder="Digite a localização" value={location} onChange={handleLocationInput} onKeyDown={handleLocationSearch}></input>
 
             <div>
-              <h1 className="text-slate-400 font-bold font-inter text-2xl ">
+              <h1 className="text-slate-100 font-bold font-inter text-2xl ">
                 {data ? (
                   <p className="flex items-center">
                     <BiSolidMapPin className="mr-1" />
@@ -65,17 +65,17 @@ export default function App() {
               </h1>
             </div>
             <div>
-              <h1 className="text-slate-400 font-bold font-inter text-ml">
+              <h1 className="text-slate-100 font-bold font-inter text-ml">
                 {data?.main ? <p className="bold">{data.main.temp}°C</p> : null}
               </h1>
             </div>
             <div className="text-center">
-              <h1 className="text-slate-400 font-bold font-inter text-2xl">
+              <h1 className="text-slate-100 font-bold font-inter text-2xl">
                 {data && data.weather ? <p>{data.weather[0].description}</p> : null}
               </h1>
             </div>
             <div className="flex flex-row pb-5 space-x-2 text-center">
-              <h1 className="text-slate-400 font-bold font-inter text-2xl">
+              <h1 className="text-slate-100 font-bold font-inter text-2xl">
                 {data?.main ? (
                   <p className="flex items-center ">
                     <BsFillDropletFill className="mr-2" />
@@ -83,10 +83,10 @@ export default function App() {
                   </p>
                 ) : null}
               </h1>
-              <h1 className="text-slate-400 font-bold font-inter text-2xl">
+              <h1 className="text-slate-100 font-bold font-inter text-2xl">
                 {data?.main ? <p>|</p> : null}
               </h1>
-              <h1 className="text-slate-400 font-bold font-inter text-2xl ">
+              <h1 className="text-slate-100 font-bold font-inter text-2xl ">
                 {data?.wind ? (
                   <p className="flex items-center">
                     <FiWind className="mr-2" />
