@@ -44,14 +44,14 @@ export default function App() {
   return (
     <main style={{ backgroundImage: "url('src/assets/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "black" }}>
       <div className="h-screen flex flex-col items-center justify-center">
-        <h1 className="text-slate-100 font-bold font-inter text-6xl tracking-wide drop-shadow-md">ClimaTempo</h1>
+        <h1 className="text-teal-700 font-bold font-inter text-6xl tracking-wide drop-shadow-md">ClimaTempo</h1>
 
-        <div className="bg-bg mt-10 rounded-md shadow-2xl p-12 ">
+        <div className="bg-bg mt-10 rounded-md shadow-2xl p-12">
           <div className="flex flex-col items-center space-y-4 ">
             <input className="rounded-md w-80 h-9 pl-2 pr-2 mt-2 focus:outline-none" placeholder="Digite a localização" value={location} onChange={handleLocationInput} onKeyDown={handleLocationSearch}></input>
 
             <div>
-              <h1 className="text-slate-100 font-bold font-inter text-2xl ">
+              <h1 className="text-teal-700 font-bold font-inter text-2xl drop-shadow-md">
                 {data ? (
                   <p className="flex items-center">
                     <BiSolidMapPin className="mr-1" />
@@ -65,30 +65,30 @@ export default function App() {
               </h1>
             </div>
             <div>
-              <h1 className="text-slate-100 font-bold font-inter text-ml">
+              <h1 className="text-teal-700 font-bold font-inter text-ml drop-shadow-md">
                 {data?.main ? <p className="bold">{data.main.temp}°C</p> : null}
               </h1>
             </div>
             <div className="text-center">
-              <h1 className="text-slate-100 font-bold font-inter text-2xl">
+              <h1 className="text-teal-700 font-bold font-inter text-2xl drop-shadow-md">
                 {data && data.weather ? <p>{data.weather[0].description}</p> : null}
               </h1>
             </div>
             <div className="flex flex-row pb-5 space-x-2 text-center">
-              <h1 className="text-slate-100 font-bold font-inter text-2xl">
+              <h1 className="text-teal-700 font-bold font-inter text-2xl drop-shadow-md">
                 {data?.main ? (
-                  <p className="flex items-center ">
+                  <p className="flex items-center drop-shadow-md">
                     <BsFillDropletFill className="mr-2" />
                     {data.main.humidity}%
                   </p>
                 ) : null}
               </h1>
-              <h1 className="text-slate-100 font-bold font-inter text-2xl">
+              <h1 className="text-teal-700 font-bold font-inter text-2xl drop-shadow-md">
                 {data?.main ? <p>|</p> : null}
               </h1>
-              <h1 className="text-slate-100 font-bold font-inter text-2xl ">
+              <h1 className="text-teal-700 font-bold font-inter text-2xl drop-shadow-md">
                 {data?.wind ? (
-                  <p className="flex items-center">
+                  <p className="flex items-center drop-shadow-md">
                     <FiWind className="mr-2" />
                     {data.wind.speed}km/h
                   </p>
